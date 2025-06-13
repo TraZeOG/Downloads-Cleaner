@@ -13,7 +13,7 @@ class Bouton():
         mouse_cos = pygame.mouse.get_pos()
         SCREEN.blit(self.image, self.rect)
         if self.rect.collidepoint(mouse_cos):
-            """This part of the code handles all bugs with buttons (so when the user clicks it clicks one time and one time only) (scuffed ik)"""
+            """handles all the problems with buttons"""
             if pygame.mouse.get_pressed()[0] == 1:
                 self.clicked = True
             if pygame.mouse.get_pressed()[0] == 0 and self.clicked == True:
